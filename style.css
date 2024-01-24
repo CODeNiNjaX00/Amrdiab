@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #000000;
+    filter: hue-rotate(-10deg);
+}
+
+header .navbar ul {
+    display: flex;
+    float: right;
+}
+
+header .navbar ul li {
+    list-style: none;
+    margin-left: 200px;
+    padding: 30px;
+    position: relative;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding-left: 100px;
+    position: absolute;
+    right: 350px;
+}
+
+header .navbar .logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #000000;
+    filter: brightness(150%);
+    filter: contrast(120%);
+    filter: drop-shadow(5px 5px 10px #000000);
+}
+ .logo::first-letter {
+   color:#e08700;
+ }
+
+ header .navbar ul li a:hover {
+    color: #fcba04;
+    font-size: 25px;
+    transition: 0.7s;
+ }
+
+ body {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    position: relative;
+    overflow: hidden;
+ }
+ .container2 {
+    height: 100vh;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient( rgba(255, 255, 255, 0.616) 0%, rgba(0, 0, 0, 0.048) 30%, rgb(0, 0, 0) 100%);
+    position: absolute;
+ }
+
+ .headlines {
+    position: relative;
+    text-align: center;
+    top: 150px;
+    left: 220px;
+    font-size: 21px;
+ }
+
+ .a {
+    font-family: 'Abril Fatface';
+    font-size: 30pxpx;
+    letter-spacing: 5px;
+    color: #ffffff;
+ }
+
+ .b {
+    font-family: 'Abril Fatface';
+    letter-spacing: 2px;
+    opacity: 0.8;
+ }
+
+ .btn {
+    position: absolute;
+    top: 300px;
+    left: 750px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    
+ }
+ 
+.btn:hover {
+    background-image: linear-gradient(to left, #e08300 0%, #edde5de0 51%, #ffed8486 100%);
+    transition: 0.5s;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .a {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+@media screen and (min-width: 1200px) {
+    .btn {
+        left: 55%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    header .navbar ul li {
+        margin-left: 10px;
+        text-align: center;
+        position: relative;
+        left: 200px;
+    }
+
+    header .navbar ul li a {
+        position: absolute;
+    }
+
+    header .navbar ul li a:hover {
+        color: #fcba04;
+        font-size: 15px;
+        transition: 0.5s;
+        
+    }
+    .img {
+        position: absolute;
+        right: 40%;
+    }
+    .headlines {
+        font-size: 15px;
+        position: absolute;
+        right: 30px;
+    }
+    }
+
+
+}
+
